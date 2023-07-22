@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PDF to Word</title>
+
+    <!-- offline bootstrap-->
+
+    <link rel="stylesheet" type="text/css" href="/bootstrap.min.css">
+
+    <!-- css files-->
+
+    <link rel="stylesheet" href="/doc card.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="/upload1.css">
+
+    <!-- online cdn bootsrap-->
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+
+</head>
+
+<body>
+    <div class="title">
+        <a href="/" id="navbartitle">DocWizard</a>
+    </div>
+    <nav class="sticky-top">
+        <div class="nav">
+            <ul>
+                <a href="/pdftojpg">
+                    <li>PDF to JPG</li>
+                </a>
+                <a href="/merge">
+                    <li>Merge PDF</li>
+                </a>
+                <a href="/pdftoword">
+                    <li>PDF to Word</li>
+                </a>
+                <a href="/pdftoexcel">
+                    <li>PDF to Excel</li>
+                </a>
+                <a href="/wordtopdf">
+                    <li>Word to PDF</li>
+                </a>
+                <a href="/jpgtopdf">
+                    <li>JPG to PDF</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="water">
+        <div class="drop">
+            <h3><strong class="red">PDF to Word</strong></h3>
+            <div class="container">
+                <div class="header-section">
+                    <h1>Upload Files</h1>
+                    <p>PDF only allowed.</p>
+                </div>
+                <h5 class="text-success">Coverted Files are Stored at D:/Programs_And_Projects/PROJECT_3RD_YEAR/Student_Toolbox/Doc_Wizard/uploads/pdftoword</h5>
+                <form action="/convertpdftoword" method="post" enctype="multipart/form-data">
+                    <div class="drop-section">
+                        <div class="col">
+                            <div class="cloud-icon">
+                                <img src="/img/icons/cloud.png" alt="cloud">
+                            </div>
+                            <span>Drag & Drop your files here</span>
+                            <span>OR</span>
+                            <span class="file-name"></span>
+                            <button class="file-selector">Browse Files</button>
+                            <input type="file" name="file" class="file-selector-input" accept=".pdf" required multiple>
+                        </div>
+                        <div class="col">
+                            <div class="drop-here">Drop Here</div>
+                        </div>
+                    </div>
+                    <div class="list-section">
+                        <div class="list-title">Uploaded Files</div>
+                        <div class="list"></div>
+                        <center>
+                            <button class="key" type="submit" name="submit">Convert</button>
+                          </center>
+                        </form>
+                </div>
+    
+            </div>
+        </div>
+    
+    
+    
+        <!-- script files-->
+    
+        <script src="/script.js"></script>
+    
+        <script src="/upload1.js"></script>
+    
+        <script type="text/javascript" src="/bootstrap.bundle.min.js"></script>
+    
+        <script>
+            const fileInput = document.querySelector('.file-selector-input');
+    const fileNameSpan = document.querySelector('.file-name');
+    
+    fileInput.addEventListener('change', () => {
+      let fileNames = '';
+      for (let i = 0; i < fileInput.files.length; i++) {
+        fileNames += fileInput.files[i].name + ', ';
+      }
+      fileNameSpan.textContent = fileNames.slice(0, -2);
+    });
+          </script>
+    
+        <!-- <script type="text/javascript" src="/bootstrap.esm.min.js"></script> -->
+    
+    
+        <!-- online cdn bootsrap script -->
+    
+        <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
+    
+    </body>
+    
+    </html>
