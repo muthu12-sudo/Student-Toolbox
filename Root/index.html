@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Toolbox</title>
+	<!-- Include Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Include jQuery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<!-- Include Bootstrap JS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<style>
+		.tool-box {
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+			padding: 20px;
+			margin-bottom: 20px;
+			height: 450px;
+			text-align: center;
+		}
+		.tool-box:hover {
+			box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+		}
+		.tool-box img {
+			max-width: 100%;
+			max-height: 180px;
+			margin-bottom: 15px;
+		}
+		.tool-box h3 {
+			font-size: 24px;
+			margin-bottom: 15px;
+			color: #5a5a5a;
+			font-weight: bold;
+		}
+		.tool-box p {
+			font-size: 18px;
+			line-height: 24px;
+			color: #999;
+			margin-bottom: 20px;
+		}
+		.tool-box a.btn {
+			background-color: #007bff;
+			color: #fff;
+			border-radius: 5px;
+			padding: 10px 30px;
+			font-size: 18px;
+			font-weight: bold;
+			transition: all .3s ease;
+			margin-top: auto;
+		}
+		.tool-box a.btn:hover {
+			background-color: #0056b3;
+			color: #fff;
+			text-decoration: none;
+			box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+		}
+	</style>
+</head>
+<body>
+    <div class="title">
+        <a href="docwizard.html" id="navbartitle">Student Toolbox</a>
+    </div>
+    <nav class="sticky-top">
+
+        <div class="nav">
+            <ul>
+                <a href="#download">
+                    <li>Calc Park</li>
+                </a>
+                <a href="../Flappy Bird/flappybird.html" target="_blank">
+                    <li>Flappy Bird</li>
+                </a>
+                <a href="http://localhost:4000/" target="_blank">
+                    <li>Docwizard</li>
+                </a>
+                <a href="http://localhost:3000/" target="_blank">
+                    <li>Resume Builder</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+	<br><br>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="tool-box" >
+					<img src="images/calcpark.jpg" alt="Calculator Park">
+					<h3>Calc Park</h3>
+					<p>Calc Park is a Visual Basic application that provides a normal and percentage calculator. It is a useful tool for performing basic and percentage calculations quickly and easily.</p>
+					<a href="../Calc Park/CALC PARK.rar" id="download" class="btn btn-primary">Download Calcpark Application</a>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="tool-box">
+					<img src="images/docwizard.jpg" alt="Docwizard">
+                    <h3>Doc Wizard</h3>
+					<p>Doc Wizard is a tool for converting documents from one format to another. It supports a variety of file types, including PDF, DOC, and JPG.</p>
+					<a href="http://localhost:4000/" target="_blank" class="btn btn-primary">Use Doc Wizard</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="tool-box">
+					<img src="images/resume.jpg" alt="Resume Builder">
+					<h3>Resume Builder</h3>
+					<p>Resume Builder is a web-based tool that allows users to create professional-looking resumes quickly and easily. It provides a variety of templates and customization options to help users create a resume that suits their needs.</p>
+					<a href="http://localhost:3000/" target="_blank" class="btn btn-primary">Build a Resume</a>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="tool-box">
+					<img src="images/flappybird.jpg" alt="Flappy Bird Game">
+					<h3>Flappy Bird Game</h3>
+					<p>Flappy Bird is a popular game that challenges players to navigate a bird through a series of obstacles. This version of the game is built using HTML, CSS, and JavaScript.</p>
+					<a href="../Flappy Bird/flappybird.html" target="_blank" class="btn btn-primary">Play Flappy Bird</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
